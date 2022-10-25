@@ -24,24 +24,10 @@
 
 /* ------------------Background*/
 
-.bgColor{
+.main-container{
     background-color:#7439D3;
-    height: 130%;
+    height: 100vh;
     width: 100%;
-    position: absolute;
-    top: 0;
-}
-.wave{
-    min-width: 1080px;
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    top: 600px;
-    background-image: url('./img/redondo.svg');
-    background-position: bottom;
-    left: 0;
-    right: 0;
-    background-repeat: no-repeat;
 }
 
 /* ----------------Navbar */
@@ -82,7 +68,6 @@ ul.dropdown-menu li{
 /* ----------------Main */
 
 .mainContainer{
-    position: relative;
     margin:auto;
     width: 100%;
     padding-top: 100px;
@@ -124,7 +109,73 @@ article p{
 }
 
 /* ------------------Servicios */
-.servicios {
+.services{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+}
+button{
+    width: 300px;
+}
+.camara {
+    --bs-btn-color: #fff;
+    --bs-btn-bg:  #2D9DC5;
+    --bs-btn-border-color:  #2D9DC5;
+    --bs-btn-hover-color:#ffffff;
+    --bs-btn-hover-bg: #2a91b6;
+    --bs-btn-hover-border-color:#2a91b6;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2a91b6;
+    --bs-btn-active-border-color: #2a91b6;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #2a91b6;
+    --bs-btn-disabled-border-color: #2a91b6;
+    color: #fff;
+}
+.camarasDescription {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: rgb(105, 105, 105);
+    width: 300px;
+    background-color: #f0f0f0;
+}
+
+.camButton{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #2D9DC5;
+    color: #f0f0f0;
+}
+
+.it {
+    --bs-btn-color: #fff;
+    --bs-btn-bg:  #EC4228;
+    --bs-btn-border-color:  #EC4228;
+    --bs-btn-hover-color:#ffffff;
+    --bs-btn-hover-bg: #d43820;
+    --bs-btn-hover-border-color:#d43820;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #d43820;
+    --bs-btn-active-border-color: #d43820;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #d43820;
+    --bs-btn-disabled-border-color: #d43820;
+    color: #fff;
+}
+
+.itDescription {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: #fff;
+    width: 300px;
+    background-color: #EC4228;
+}
+/* .servicios {
     position: relative;
     margin-top: 150px;
     display: flex;
@@ -196,7 +247,7 @@ article p{
     font-size: 14pt;
     line-height: 22.7pt;
     width: 100%;
-}
+} */
 
 /*----------------------------------------------------------------*/
 
